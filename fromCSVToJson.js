@@ -2,7 +2,7 @@
 
 //scrivere "node .\scripts.js" sul terminale (new terminal)
 
-
+//students.csv
 
 //1) Leggere il file CSV dal PC -> ci darà una stringa
 //https://nodejs.org/en/learn/manipulating-files/reading-files-with-nodejs (Reading files with Node.js)
@@ -37,7 +37,7 @@ let data;
 
 //blocco "try/catch" - serve a prevenire che il codice si rompa
 try {
-    data = fs.readFileSync('Input/students.csv', 'utf8'); //windows usa lo reverse backslash (\) ma per usarlo in Javascript dobbiamo cambiarla
+    data = fs.readFileSync('./Input/students.csv', 'utf8'); //windows usa lo reverse backslash (\) ma per usarlo in Javascript dobbiamo cambiarla
     // console.log(data);
 } catch (err) {  // in caso il codice si rompa mi verrà un "catch"
     console.error(err);
@@ -97,6 +97,8 @@ try {  //11) undicesimo task
 } catch (err) {
   console.error(err);
 }
+
+
 
 
 
