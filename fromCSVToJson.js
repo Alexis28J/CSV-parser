@@ -6,6 +6,7 @@
 
 //1) Leggere il file CSV dal PC -> ci darà una stringa
 //https://nodejs.org/en/learn/manipulating-files/reading-files-with-nodejs (Reading files with Node.js)
+//fs.readFileSync() serve per leggere il contenuto di un file in modo sincrono in Node.js. Significa che il codice si blocca e aspetta che la lettura del file sia completata prima di passare alla riga successiva. È utile per operazioni di I/O (Input/Output) che non devono bloccare l'applicazione, come la lettura di configurazioni all'avvio, e restituisce il contenuto del file come un buffer o una stringa.
 
 //2) Spezzo il testo (file CSV) in un array di stringhe
 //https://stackoverflow.com/questions/21895233/how-to-split-string-with-newline-n-in-node (Come si splita una stringa con "New line")
